@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Froy - Twitch Viewer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="script.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container main mt-5">
+		<div class="row">
+			<div class="col-12 header">
+				<h1>Twitch Viewer</h1>
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-12 menu d-flex justify-content-around ">
+				<a class="btn btn-outline-primary" id="all-btn">All</a>
+				<a class="btn btn-outline-success" id="on-btn">Online</a>
+				<a class="btn btn-outline-danger" id="off-btn">Offline</a>
+			</div>
+		</div>
+		<div class="d-flex flex-row flex-wrap justify-content-around mt-5" id="flex-container">
+			<div class="card m-2" id="template">
+				<img src="" alt="" class="img-card-top">
+				<div class="card-block">
+					<h4 class="card-title"></h4><span class="status"></span>
+					<p class="card-text" ></p>
+					<a href="" class="btn btn-primary stream-btn" target="_blank">Go to Stream</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

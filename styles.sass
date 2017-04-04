@@ -1,0 +1,82 @@
+$mq-mobile-portrait: 320px !default;
+$mq-mobile-landscape: 480px !default;
+$mq-tablet-portrait: 768px !default;
+$mq-tablet-landscape: 1024px !default;
+$mq-desktop: 1382px !default;
+
+body
+	background-color: #efefef
+
+.container
+	width: 90%
+h1
+	font-size: 72px
+	color: #777
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-danger
+	width: 200px
+	height: 55px
+	font-size: 32px
+	line-height: 35px
+.btn-primary
+	background-color: #fff
+#template
+	display: none
+
+.menu
+	a:not([href]):not([tabindex])
+		color: #777
+		&:hover
+			color: #fff
+			cursor: pointer
+
+.card
+	border: 1px solid #bdc3c7
+	width: 17em
+	box-shadow: 3px 4px 18px 0px rgba(128,128,128,1);
+	transition: .5s box-shadow
+	&:hover
+		cursor: pointer
+		box-shadow: none
+		.stream-btn
+			background-color: #2980b9
+			color: #fff
+	img
+		width: 70%
+		height: auto
+		margin: 0 auto;
+	.card-title
+		color: #555
+	.card-text
+		color: #666
+	.stream-btn
+		border-color:#2980b9
+		color: #2980b9
+
+@media  screen and (min-width: $mq-mobile-portrait)
+	.card
+		border: 1px solid #bdc3c7
+		width: 25em
+		box-shadow: none
+		transition: none
+
+@media  screen and (min-width: $mq-tablet-portrait)
+	.card
+		border: 1px solid #bdc3c7
+		width: 20em
+		box-shadow: none;
+		transition: none
+
+@media  screen and (min-width: $mq-tablet-landscape)
+	.card
+		border: 1px solid #bdc3c7
+		width: 17em
+		box-shadow: 3px 4px 18px 0px rgba(128,128,128,1);
+		transition: .5s box-shadow
+		&:hover
+			cursor: pointer
+			box-shadow: none
+			.stream-btn
+				background-color: #2980b9
+				color: #fff
